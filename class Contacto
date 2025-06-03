@@ -1,0 +1,36 @@
+public class Contacto {
+    private String nombre;
+    private String telefono;
+    private String correo;
+    private String nota;
+    private String etiqueta;
+
+    public Contacto(String nombre, String telefono, String correo, String nota, String etiqueta) {
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.correo = correo;
+        this.nota = nota;
+        this.etiqueta = etiqueta;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getEtiqueta() {
+        return etiqueta;
+    }
+
+    public String toString() {
+        return nombre + "," + telefono + "," + correo + "," + nota + "," + etiqueta;
+    }
+
+    public void mostrar() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Teléfono: " + telefono);
+        System.out.println("Correo: " + correo);
+        System.out.println("Nota: " + nota);
+        System.out.println("Etiqueta: " + etiqueta);
+        System.out.println("---------------------------------");
+    }
+}
