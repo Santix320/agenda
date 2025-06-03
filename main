@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Agenda agenda = new Agenda();
+        Scanner sc = new Scanner(System.in);
+        int opcion;
+
+        do {
+            System.out.println("\n--- AGENDA DE CONTACTOS ---");
+            System.out.println("1. Agregar contacto");
+            System.out.println("2. Mostrar todos los contactos");
+            System.out.println("3. Buscar por nombre");
+            System.out.println("4. Buscar por etiqueta");
+            System.out.println("5. Guardar en archivo");
+            System.out.println("6. Cargar desde archivo");
+            System.out.println("7. Salir");
+            System.out.print("Seleccione una opción: ");
+            opcion = Integer.parseInt(sc.nextLine());
+
+            switch (opcion) {
+                case 1:
+                    System.out.print("Nombre: ");
+                    String nombre = sc.nextLine();
+                    System.out.print("Teléfono: ");
+                    String telefono = sc.nextLine();
+                    System.out.print("Correo: ");
+                    String correo = sc.nextLine();
+                    System.out.print("Nota: ");
+                    String nota = sc.nextLine();
+                    System.out.print("Etiqueta (familia, amigos, trabajo, etc.): ");
+                    String etiqueta = sc.nextLine();
+                    Contacto nuevo = new Contacto(nombre, telefono, correo, nota, etiqueta);
+                    agenda.agregarContacto(nuevo);
+                    break;
+                case 2:
+                    agenda.mostrarContactos();
+                    break;
+                case 3:
+                    System.out.print("Nombre a buscar: ");
+                    String buscarNombre = sc.nextLine();
+                    agenda.buscarPorNombre(buscarNombre);
+                    break;
+                case 4:
+                    System.out.print("Etiqueta a buscar: ");
+                    String buscarEtiqueta = sc.nextLine();
+                    agenda.buscarPorEtiqueta(buscarEtiqueta);
+                    break;
+                case 5:
+                    agenda.guardarEnArchivo("contactos.txt");
+                    break;
+                case 6:
+                    agenda.cargarDesdeArchivo("contactos.txt");
+                    break;
+                case 7:
+                    System.out.println("¡Hasta luego!");
+                    break;
+                default:
+                    System.out.println("Opción no válida.");
+            }
+        } while (opcion != 7);
+
+        sc.close();
+    }
+}
+
