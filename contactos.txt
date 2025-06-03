@@ -1,0 +1,20 @@
+Santiago,302030203,santiago@email.com,Amigo universidad,amigos
+Laura,3151234567,laura@trabajo.com,Jefa,trabajo
+Carlos,3009876543,carlos@familia.com,Primo ,familia
+Diana,3205556677,diana@gmail.com,Compañera de universidad,amigos
+Pedro,3101122334,pedro@empresa.com,Supervisor del área,trabajo
+Valeria,3112233445,valeria@outlook.com,Prima,familia
+Andrés,3001112233,andres@yahoo.com,Vecino,amigos
+Lucía,3223344556,lucia@gmail.com,Hermana,familia
+Mateo,3135566778,mateo@trabajo.org,Compañero,trabajo
+Camila,3019988776,camila@correo.com,Amiga del gimnasio,amigos
+Sebastián,3128887766,sebastian@empresa.com,compañero,trabajo
+Isabela,3103344556,isabela@hotmail.com,prima,familia
+Julián,3162233445,julian@estudio.com,Compañero de proyecto,amigos
+María,3146677889,maria@docente.edu,Profesora universitaria,trabajo
+Tomás,3007766554,tomas@gmail.com,Tío,familia
+Natalia,3159988776,natalia@outlook.com,Ex ,amigos
+Felipe,3114455667,felipe@empresa.com,Director general,trabajo
+Daniela,3213344557,daniela@correo.com,Amiga de infancia,amigos
+Ricardo,3021144556,ricardo@familia.com,Padre,familia
+Alejandra,3196677885,alejandra@trabajo.org,Asistente de gerencia,trabajo
